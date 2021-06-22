@@ -1,24 +1,5 @@
-# README
+In this repository I've tried to stick as close as possible to the default values for either dependency, but please note that I'm using a beta version of webpacker (this shouldn't impact this bug).
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To reproduce, clone the repository, run `bundle` and `yarn` and start the webpack-dev-server: `bin/webpack-dev-server`.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The expected result would be for Tailwind to compile once and start watching, but instead it now keeps recompiling in an infinite loop.
